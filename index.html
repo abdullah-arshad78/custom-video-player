@@ -1,0 +1,84 @@
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+    <video
+      src="videos/gone.mp4"
+      id="video"
+      class="screen"
+      poster="img/poster.png"
+    ></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <img src="img/play.png" class="controller" alt="" />
+      </button>
+      <button class="btn" id="stop">
+        <img src="img/stop.png" alt="" />
+      </button>
+      <input
+        type="range"
+        name=""
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <div class="authors">
+      <div class="icon-description">
+        Play icon made by
+        <a
+          href="https://www.flaticon.com/authors/abdul-allib"
+          title="abdul allib"
+          >abdul allib</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a
+        >,
+      </div>
+      <div class="icon-description">
+        stop icon made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        &
+      </div>
+      <div class="icon-description">
+        pause icon made by
+        <a href="https://www.flaticon.com/authors/inkubators" title="inkubators"
+          >inkubators</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
